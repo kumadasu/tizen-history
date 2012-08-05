@@ -1,10 +1,12 @@
 tizen-history
 =============
 
-*Purpose
+Purpose
+-------
 Describing the history of Tizen
 
-*Why
+Why
+---
 It seems very complicated the history of Tizen.
 Various OSs and Organizations are
 related to Tizen.

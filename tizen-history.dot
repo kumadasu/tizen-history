@@ -1,0 +1,86 @@
+digraph tizenhistory {
+graph [label="Tizen History (In Construction August 5th, 2012)"]
+/*timeline*/
+{
+	node [shape=plaintext, fontsize=16];
+	"past" -> /*1990 ->
+	1991 -> 1992 -> 1993 -> 1994 -> 1995 ->
+	1996 -> 1997 -> 1998 -> 1999 -> 2000 ->
+	2001 -> 2002 -> 2003 -> 2004 ->*/ 2005 ->
+	2006 -> 2007 -> 2008 -> 2009 -> 2010 ->
+	2011 -> 2012 -> 2013 -> "future";
+}
+
+/* Organizations */
+{
+	node [shape=box];
+	{ rank = same; "past"; "Nokia"}
+	{ rank = same; "past"; "Intel"}
+	{ rank = same; "past"; "Samsung"}
+	{ rank = same; "past"; "ARM and several manufacturers"}
+	{ rank = same; "past"; "Several Car Manufacturers"}
+	{ rank = same; "past"; "Canonical"}
+	{ rank = same; "past"; "Linux Foundation"}
+	{ rank = same; "past"; "Toyota"}
+	{ rank = same; "2007"; "LiMo Foundation"}
+	{ rank = same; "2009"; "GENIVI Alliance"}
+	{ rank = same; "2011"; "Tizen Association"} //?
+"Toyota" -> "Linux Foundation";
+"Intel" -> "GENIVI Alliance";
+"Several Car Manufacturers" -> "GENIVI Alliance";
+"ARM and several manufacturers" -> "GENIVI Alliance";
+"Canonical" -> "GENIVI Alliance";
+}
+
+/* Technologies */
+{
+	node [shape=plaintext];
+//	"HTML5";
+}
+
+/* OS */
+{ rank = same; "past"; "Ubuntu"; "Fedora"; "Debian"}
+{ rank = same; 2005; "OS2005"}
+{ rank = same; 2006; "OS2006"}
+{ rank = same; 2007; "OS2007"; "Moblin"}
+{ rank = same; 2008; "OS2008"}
+{ rank = same; 2009; "Maemo5"; "Moblin2"; "Ubuntu 9.04"}
+{ rank = same; 2010; "MeeGo"; "Mer 0.17"}
+{ rank = same; 2011; "Ubuntu 11.04"}
+{ rank = same; "Ubuntu 11.10"; "Ubuntu IVI Remix 1.0"}
+{ rank = same; 2012; "TizenMobile Alpha"; "TizenIVI Alpha"};
+{ rank = same; "TizenMobile 1.0 Larkspur"; "TizenIVI 1.0 Larkspur"}
+{ rank = same; 2013; "TizenMobile 2.0 Magnolia"; "TizenIVI  2.0 Magnolia" }
+	"Debian" -> "Ubuntu";
+	"Debian" -> "OS2005" -> "OS2006" -> "OS2007" -> "OS2008" -> "Maemo5" -> "MeeGo 1.2";
+	"Fedora" -> "Moblin" -> "Moblin2" -> "Maemo5";
+	"Mer" -> "Mer 0.17" -> "MeeGo" -> "Mer X";
+	"Maemo5" -> "Mer X";
+	"Bada" -> "TizenMobile Alpha";
+	"MeeGo" -> "MeeGo 1.1" -> "MeeGo 1.2";
+	"MeeGo" -> "MeeGo IVI 1.1" -> "MeeGo IVI 1.2" -> "MeeGo IVI 1.3" -> "TizenIVI Alpha";
+	//Mer -> "TizenIVI Alpha";
+	"TizenMobile Alpha" -> "TizenMobile 1.0 Larkspur" -> "TizenMobile 2.0 Magnolia" -> "Tizen X (Mobile/IVI)?";
+	"TizenIVI Alpha" -> "TizenIVI 1.0 Larkspur" -> "TizenIVI  2.0 Magnolia" -> "Tizen X (Mobile/IVI)?";
+	"Ubuntu" -> "Ubuntu 9.04" -> "Ubuntu 11.04" -> "Ubuntu 11.10" -> "Ubuntu IVI Remix 1.0";
+	"Ubuntu 11.04" -> "Ubuntu IVI Remix pre-release" -> "Ubuntu IVI Remix 1.0";
+
+"Canonical" -> "Ubuntu";
+"Nokia" -> "OS2005";
+"Intel" -> "MeeGo";
+"Nokia" -> "Mer";
+"Nokia" -> "MeeGo";
+//"Toyota" -> "MeeGo IVI 1.2";
+"Samsung" -> "Bada";
+"Intel" -> "TizenIVI Alpha";
+"Samsung" -> "TizenMobile Alpha";
+"GENIVI Alliance" -> "MeeGo IVI 1.1";
+"GENIVI Alliance" -> "TizenIVI Alpha";
+"GENIVI Alliance" -> "Ubuntu IVI Remix pre-release";
+"LiMo Foundation" -> "MeeGo";
+"Tizen Association" -> "TizenIVI Alpha";
+"Tizen Association" -> "TizenMobile Alpha";
+"Linux Foundation" -> "TizenIVI Alpha";
+"Linux Foundation" -> "TizenMobile Alpha";
+}
+

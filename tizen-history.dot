@@ -66,6 +66,7 @@ graph [label="Tizen History (In Construction August, 2012)"]
 
 "Canonical" -> "Ubuntu";
 "Nokia" -> "OS2005";
+"Intel" -> "Moblin";
 "Intel" -> "MeeGo";
 "Nokia" -> "Mer";
 "Nokia" -> "MeeGo";

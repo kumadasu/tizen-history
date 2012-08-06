@@ -52,10 +52,9 @@ graph [label="Tizen History (In Construction August 5th, 2012)"]
 { rank = same; "TizenMobile 1.0 Larkspur"; "TizenIVI 1.0 Larkspur"}
 { rank = same; 2013; "TizenMobile 2.0 Magnolia"; "TizenIVI  2.0 Magnolia" }
 	"Debian" -> "Ubuntu";
-	"Debian" -> "OS2005" -> "OS2006" -> "OS2007" -> "OS2008" -> "Maemo5" -> "MeeGo 1.2";
-	"Fedora" -> "Moblin" -> "Moblin2" -> "Maemo5";
+	"Debian" -> "OS2005" -> "OS2006" -> "OS2007" -> "OS2008" -> "Maemo5" -> "MeeGo";
+	"Fedora" -> "Moblin" -> "Moblin2" -> "MeeGo";
 	"Mer" -> "Mer 0.17" -> "MeeGo" -> "Mer X";
-	"Maemo5" -> "Mer X";
 	"Bada" -> "TizenMobile Alpha";
 	"MeeGo" -> "MeeGo 1.1" -> "MeeGo 1.2";
 	"MeeGo" -> "MeeGo IVI 1.1" -> "MeeGo IVI 1.2" -> "MeeGo IVI 1.3" -> "TizenIVI Alpha";

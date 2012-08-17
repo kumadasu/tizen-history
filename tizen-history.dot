@@ -55,7 +55,7 @@ graph [label="Tizen History (In Construction August, 2012)"]
 	"Debian" -> "OS2005" -> "OS2006" -> "OS2007" -> "OS2008" -> "Maemo5" -> "MeeGo";
 	"Fedora" -> "Moblin" -> "Moblin2" -> "MeeGo";
 	"Mer" -> "Mer 0.17" -> "MeeGo" -> "Mer X";
-	"LiMo" -> "LiMo4" -> "TizenMobile Alpha";
+	"LiMo" -> "LiMo4";
 	"MeeGo" -> "MeeGo 1.1" -> "MeeGo 1.2";
 	"MeeGo" -> "MeeGo IVI 1.1" -> "MeeGo IVI 1.2" -> "MeeGo IVI 1.3" -> "TizenIVI Alpha";
 	"SLP" -> "TizenMobile Alpha";

@@ -48,19 +48,19 @@ graph [label="Tizen History (In Construction August, 2012)"]
 { rank = same; 2010; "MeeGo"; "Mer 0.17"; "SLP"}
 { rank = same; 2011; "Ubuntu 11.04"; "LiMo4"}
 { rank = same; "Ubuntu 11.10"; "Ubuntu IVI Remix 1.0"}
-{ rank = same; 2012; "TizenMobile Alpha"; "TizenIVI Alpha"};
-{ rank = same; "TizenMobile 1.0 Larkspur"; "TizenIVI 1.0 Larkspur"}
-{ rank = same; 2013; "TizenMobile 2.0 Magnolia"; "TizenIVI  2.0 Magnolia" }
+{ rank = same; 2012; "TizenMobile 1.0 Larkspur"; "TizenIVI Preview"};
+{ rank = same; "TizenMobile 1.0 Larkspur" }
+{ rank = same; 2013; "TizenMobile 2.0 Magnolia" }
 	"Debian" -> "Ubuntu";
 	"Debian" -> "OS2005" -> "OS2006" -> "OS2007" -> "OS2008" -> "Maemo5" -> "MeeGo";
 	"Ubuntu" -> "Moblin" -> "Moblin2";
 	"Fedora" -> "Moblin2" -> "MeeGo";
 	"Mer" -> "Mer 0.17" -> "MeeGo" -> "Mer Core";
 	"LiMo" -> "LiMo4";
-	"MeeGo" -> "MeeGo 1.1" -> "MeeGo 1.2" -> "TizenIVI Alpha";
-	"SLP" -> "TizenMobile Alpha";
-	"TizenMobile Alpha" -> "TizenMobile 1.0 Larkspur" -> "TizenMobile 2.0 Magnolia" -> "Tizen X (Mobile/IVI)?";
-	"TizenIVI Alpha" -> "TizenIVI 1.0 Larkspur" -> "TizenIVI  2.0 Magnolia" -> "Tizen X (Mobile/IVI)?";
+	"MeeGo" -> "MeeGo 1.1" -> "MeeGo 1.2" -> "TizenIVI Preview";
+	"SLP" -> "TizenMobile 1.0 Larkspur";
+	"TizenMobile 1.0 Larkspur" -> "TizenMobile 2.0 Magnolia" -> "Tizen X (Mobile/IVI)?";
+	"TizenIVI Preview" -> "Tizen X (Mobile/IVI)?";
 	"Ubuntu" -> "Ubuntu 9.04" -> "Ubuntu 11.04" -> "Ubuntu 11.10" -> "Ubuntu IVI Remix 1.0";
 	"Ubuntu 11.04" -> "Ubuntu IVI Remix pre-release" -> "Ubuntu IVI Remix 1.0";
 
@@ -72,16 +72,16 @@ graph [label="Tizen History (In Construction August, 2012)"]
 "Nokia" -> "MeeGo";
 "Samsung" -> "Bada";
 "Samsung" -> "SLP";
-"Intel" -> "TizenIVI Alpha";
-"Samsung" -> "TizenMobile Alpha";
+"Intel" -> "TizenIVI Preview";
+"Samsung" -> "TizenMobile 1.0 Larkspur";
 "GENIVI Alliance" -> "MeeGo";
-"GENIVI Alliance" -> "TizenIVI Alpha";
+"GENIVI Alliance" -> "TizenIVI Preview";
 "GENIVI Alliance" -> "Ubuntu IVI Remix pre-release";
 "LiMo Foundation" -> "LiMo";
 "LiMo Foundation" -> "MeeGo";
-"Tizen Association" -> "TizenIVI Alpha";
-"Tizen Association" -> "TizenMobile Alpha";
-"Linux Foundation" -> "TizenIVI Alpha";
-"Linux Foundation" -> "TizenMobile Alpha";
+"Tizen Association" -> "TizenIVI Preview";
+"Tizen Association" -> "TizenMobile 1.0 Larkspur";
+"Linux Foundation" -> "TizenIVI Preview";
+"Linux Foundation" -> "TizenMobile 1.0 Larkspur";
 }
 

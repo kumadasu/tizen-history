@@ -58,6 +58,8 @@ graph [label="Tizen History (In Construction August, 2012)"]
 	"Mer" -> "Mer 0.17" -> "MeeGo" -> "Mer Core";
 	"LiMo" -> "LiMo4";
 	"MeeGo" -> "MeeGo 1.1" -> "MeeGo 1.2" -> "TizenIVI Preview";
+	"Maemo5" -> "MeeGo 1.2 Harmattan";
+	"MeeGo 1.2" -> "MeeGo 1.2 Harmattan";
 	"SLP" -> "TizenMobile 1.0 Larkspur";
 	"TizenMobile 1.0 Larkspur" -> "TizenMobile 2.0 Magnolia" -> "Tizen X (Mobile/IVI)?";
 	"TizenIVI Preview" -> "Tizen X (Mobile/IVI)?";

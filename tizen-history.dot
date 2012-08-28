@@ -55,10 +55,11 @@ graph [label="Tizen History (In Construction August, 2012)"]
 	"Debian" -> "OS2005" -> "OS2006" -> "OS2007" -> "OS2008" -> "Maemo5" -> "MeeGo";
 	"Ubuntu" -> "Moblin" -> "Moblin2";
 	"Fedora" -> "Moblin2" -> "MeeGo";
-	"Mer" -> "Mer 0.17" -> "MeeGo" -> "Mer Core";
+	"Mer" -> "Mer 0.17" -> "MeeGo";
 	"LiMo" -> "LiMo4";
 	"MeeGo" -> "MeeGo 1.1" -> "MeeGo 1.2" -> "TizenIVI Preview";
 	"Maemo5" -> "MeeGo 1.2 Harmattan";
+	"MeeGo 1.2" -> "Mer Core";
 	"MeeGo 1.2" -> "MeeGo 1.2 Harmattan";
 	"SLP" -> "TizenMobile 1.0 Larkspur";
 	"TizenMobile 1.0 Larkspur" -> "TizenMobile 2.0 Magnolia" -> "Tizen X (Mobile/IVI)?";

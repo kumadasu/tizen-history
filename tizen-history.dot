@@ -1,5 +1,5 @@
 digraph tizenhistory {
-graph [label="Tizen History (In Construction August, 2012)"]
+graph [label="Tizen History (In Construction March, 2013)"]
 /*timeline*/
 {
 	node [shape=plaintext, fontsize=16];
@@ -25,6 +25,7 @@ graph [label="Tizen History (In Construction August, 2012)"]
 	{ rank = same; "2007"; "LiMo Foundation"}
 	{ rank = same; "2009"; "GENIVI Alliance"}
 	{ rank = same; "2011"; "Tizen Association"} //?
+	{ rank = same; "2012"; "Jolla"} //?
 "Toyota" -> "Linux Foundation";
 "Intel" -> "GENIVI Alliance";
 "Several Car Manufacturers" -> "GENIVI Alliance";
@@ -50,7 +51,7 @@ graph [label="Tizen History (In Construction August, 2012)"]
 { rank = same; "Ubuntu 11.10"; "Ubuntu IVI Remix 1.0"}
 { rank = same; 2012; "TizenMobile 1.0 Larkspur"; "TizenIVI Preview"};
 { rank = same; "TizenMobile 1.0 Larkspur" }
-{ rank = same; 2013; "TizenMobile 2.0 Magnolia" }
+{ rank = same; 2013; "TizenMobile 2.0 Magnolia"; "Sailfish OS"}
 	"Debian" -> "Ubuntu";
 	"Debian" -> "OS2005" -> "OS2006" -> "OS2007" -> "OS2008" -> "Maemo5" -> "MeeGo";
 	"Ubuntu" -> "Moblin" -> "Moblin2";
@@ -60,6 +61,8 @@ graph [label="Tizen History (In Construction August, 2012)"]
 	"MeeGo" -> "MeeGo 1.1" -> "MeeGo 1.2" -> "TizenIVI Preview";
 	"Maemo5" -> "MeeGo 1.2 Harmattan";
 	"MeeGo 1.2" -> "Mer Core";
+	"MeeGo 1.2 Harmattan" -> "Sailfish OS";
+	"Mer Core" -> "Sailfish OS";
 	"MeeGo 1.2" -> "MeeGo 1.2 Harmattan";
 	"SLP" -> "TizenMobile 1.0 Larkspur";
 	"Bada" -> "TizenMobile 2.0 Magnolia";

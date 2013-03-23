@@ -84,7 +84,8 @@ graph [label="Tizen History (In Construction March, 2013)"]
 "GENIVI Alliance" -> "TizenIVI Preview";
 "GENIVI Alliance" -> "Ubuntu IVI Remix pre-release";
 "LiMo Foundation" -> "LiMo";
-"LiMo Foundation" -> "MeeGo";
+"LiMo Foundation" -> "TizenIVI Preview";
+"LiMo Foundation" -> "TizenMobile 1.0 Larkspur";
 "Tizen Association" -> "TizenIVI Preview";
 "Tizen Association" -> "TizenMobile 1.0 Larkspur";
 "Linux Foundation" -> "TizenIVI Preview";

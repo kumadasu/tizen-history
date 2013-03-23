@@ -90,5 +90,6 @@ graph [label="Tizen History (In Construction March, 2013)"]
 "Tizen Association" -> "TizenMobile 1.0 Larkspur";
 "Linux Foundation" -> "TizenIVI Preview";
 "Linux Foundation" -> "TizenMobile 1.0 Larkspur";
+"Jolla" -> "Sailfish OS"
 }
 

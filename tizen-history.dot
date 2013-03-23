@@ -8,7 +8,7 @@ graph [label="Tizen History (In Construction March, 2013)"]
 	1996 -> 1997 -> 1998 -> 1999 -> 2000 ->
 	2001 -> 2002 -> 2003 -> 2004 ->*/ 2005 ->
 	2006 -> 2007 -> 2008 -> 2009 -> 2010 ->
-	2011 -> 2012 -> 2013 -> "future";
+	2011 -> 2012 -> 2013;
 }
 
 /* Organizations */
@@ -50,7 +50,6 @@ graph [label="Tizen History (In Construction March, 2013)"]
 { rank = same; 2011; "Ubuntu 11.04"; "LiMo4"; "Nemo"}
 { rank = same; "Ubuntu 11.10"; "Ubuntu IVI Remix 1.0"}
 { rank = same; 2012; "TizenMobile 1.0 Larkspur"; "TizenIVI Preview"};
-{ rank = same; "TizenMobile 1.0 Larkspur" }
 { rank = same; 2013; "TizenMobile 2.0 Magnolia"; "Sailfish OS"; "Ubuntu Touch"}
 	"Debian" -> "Ubuntu";
 	"Debian" -> "OS2005" -> "OS2006" -> "OS2007" -> "OS2008" -> "Maemo5" -> "MeeGo";
@@ -66,8 +65,7 @@ graph [label="Tizen History (In Construction March, 2013)"]
 	"MeeGo 1.2" -> "MeeGo 1.2 Harmattan";
 	"SLP" -> "TizenMobile 1.0 Larkspur";
 	"Bada" -> "TizenMobile 2.0 Magnolia";
-	"TizenMobile 1.0 Larkspur" -> "TizenMobile 2.0 Magnolia" -> "Tizen X (Mobile/IVI)?";
-	"TizenIVI Preview" -> "Tizen X (Mobile/IVI)?";
+	"TizenMobile 1.0 Larkspur" -> "TizenMobile 2.0 Magnolia";
 	"Ubuntu" -> "Ubuntu 9.04" -> "Ubuntu 11.04" -> "Ubuntu 11.10" -> "Ubuntu IVI Remix 1.0";
 	"Ubuntu 11.04" -> "Ubuntu IVI Remix pre-release" -> "Ubuntu IVI Remix 1.0";
 	"Ubuntu 11.10" -> "Ubuntu 12.10" -> "Ubuntu Touch";

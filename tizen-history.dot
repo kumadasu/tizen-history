@@ -47,7 +47,7 @@ graph [label="Tizen History (In Construction March, 2013)"]
 { rank = same; 2008; "OS2008"; "LiMo"}
 { rank = same; 2009; "Maemo5"; "Moblin2"; "Ubuntu 9.04"; "Mer"}
 { rank = same; 2010; "MeeGo"; "Mer 0.17"; "SLP"}
-{ rank = same; 2011; "Ubuntu 11.04"; "LiMo4"}
+{ rank = same; 2011; "Ubuntu 11.04"; "LiMo4"; "Nemo"}
 { rank = same; "Ubuntu 11.10"; "Ubuntu IVI Remix 1.0"}
 { rank = same; 2012; "TizenMobile 1.0 Larkspur"; "TizenIVI Preview"};
 { rank = same; "TizenMobile 1.0 Larkspur" }
@@ -61,7 +61,7 @@ graph [label="Tizen History (In Construction March, 2013)"]
 	"MeeGo" -> "MeeGo 1.1" -> "MeeGo 1.2" -> "TizenIVI Preview";
 	"Maemo5" -> "MeeGo 1.2 Harmattan";
 	"MeeGo 1.2" -> "Mer Core";
-	"MeeGo 1.2 Harmattan" -> "Sailfish OS";
+	"MeeGo 1.2" -> "Nemo" -> "Sailfish OS";
 	"Mer Core" -> "Sailfish OS";
 	"MeeGo 1.2" -> "MeeGo 1.2 Harmattan";
 	"SLP" -> "TizenMobile 1.0 Larkspur";

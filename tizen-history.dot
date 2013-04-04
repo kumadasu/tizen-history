@@ -54,7 +54,7 @@ graph [label="Tizen History (In Construction March, 2013)"]
 { rank = same; 2009; "Maemo5"; "Moblin2"; "Ubuntu 9.04"; "Mer"; "webOS 1.0"}
 { rank = same; 2010; "MeeGo"; "Mer 0.17"; "SLP"; "webOS 2.0"}
 { rank = same; 2011; "Ubuntu 11.04"; "LiMo4"}
-{ rank = same; "Ubuntu 11.10"; "Ubuntu IVI Remix 1.0", "webOS 3.0"}
+{ rank = same; "Ubuntu 11.10"; "Ubuntu IVI Remix 1.0"; "webOS 3.0"}
 { rank = same; 2012; "TizenMobile 1.0 Larkspur"; "TizenIVI Preview"};
 { rank = same; "TizenMobile 1.0 Larkspur"; "Open webOS 1.0"}
 { rank = same; 2013; "TizenMobile 2.0 Magnolia"; "Sailfish OS"}
@@ -101,5 +101,7 @@ graph [label="Tizen History (In Construction March, 2013)"]
 "HP" -> "webOS 3.0";
 "HP" -> "Open webOS 1.0";
 "LG" -> "Open webOS 1.0";
+"Jolla" -> "Sailfish OS";
+"Sailfish Alliance" -> "Sailfish OS";
 }
 

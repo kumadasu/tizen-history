@@ -62,7 +62,7 @@ graph [label="Tizen History (In Construction March, 2013)"]
 	"MeeGo 1.2" -> "Mer Core";
 	"MeeGo 1.2" -> "Nemo" -> "Sailfish OS";
 	"Mer Core" -> "Sailfish OS";
-	"MeeGo 1.2" -> "MeeGo 1.2 Harmattan";
+	"MeeGo 1.2 Harmattan" -> "MeeGo 1.2";
 	"SLP" -> "TizenMobile 1.0 Larkspur";
 	"Bada" -> "TizenMobile 2.0 Magnolia";
 	"TizenMobile 1.0 Larkspur" -> "TizenMobile 2.0 Magnolia";

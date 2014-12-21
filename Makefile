@@ -1,12 +1,28 @@
-DOT		= dot
-FLAGS	= -Tpdf
-DOTFILE	= tizen-history.dot
-OUTFILE	= tizen-history.pdf
+# variables
+DOT     = dot
+FLAGS   = -Tpdf
+DOTFILE = tizen-history.dot
+OUTFILE = tizen-history.pdf
 
-all:	$(OUTFILE)
+READER1  = xpdf
+READER2  = evince
+READER3  = acroread
+READER   = $(READER2)
 
-$(OUTFILE):	$(DOTFILE)
-			$(DOT) $(FLAGS) $(DOTFILE) -o $(OUTFILE)
+
+# targets
+.PHONY: all clean read
+
+all:: $(OUTFILE)
+
+$(OUTFILE): $(DOTFILE)
+	$(DOT) $(FLAGS) $(DOTFILE) -o $(OUTFILE)
 
 clean:
-			rm -f $(OUTFILE)
+	rm -f $(OUTFILE)
+
+show: $(OUTFILE)
+	$(READER) $(OUTFILE)
+
+
+# ### EOF ###

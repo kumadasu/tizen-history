@@ -63,10 +63,10 @@ graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-2
 { rank = same; 2005; "OS2005" }
 { rank = same; 2006; "OS2006" }
 { rank = same; 2007; "OS2007"; "Moblin" }
-{ rank = same; 2008; "OS2008"; "LiMo" }
+{ rank = same; 2008; "OS2008"; "LiMo"; "SLP 2008" }
 { rank = same; 2009; "Maemo5"; "Moblin2"; "Ubuntu 9.04"/*; "Mer"*/ }
 { rank = same; 2010; "MeeGo"; "Mer 0.17"; "Bada 1.0" }
-{ rank = same; 2011; "Ubuntu 11.04"; "LiMo4"; "Nemo Mobile"; "MeeGo 1.2" }
+{ rank = same; 2011; "Ubuntu 11.04"; "LiMo4"; "SLP 2011"; "Nemo Mobile"; "MeeGo 1.2" }
 { rank = same; "2011-09"; "Ubuntu IVI Remix Beta1 for 11.04" }
 { rank = same; "2011-10"; "Ubuntu 11.10" }
 { rank = same; "2011-12"; "Ubuntu IVI Remix Beta2 for 11.04" }
@@ -110,8 +110,11 @@ graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-2
 "NetBSD" -> "Bada 1.0";
 "OpenBSD" -> "Bada 1.0";
 "Bada 1.0" -> "Bada 2.0.6" -> "TizenMobile 2.0 Magnolia";
-"Samsung Linux Platform" -> "TizenMobile 1.0 Larkspur";
 
+"Samsung Linux Platform" -> "SLP 2008" -> "SLP 2011" -> "Tizen code base";
+"SLP 2008" -> "LiMo";
+"SLP 2011" -> "LiMo4";
+"LiMo4" -> "SLP 2011";
 "LiMo" -> "LiMo4" -> "Tizen code base" -> "Tizen 1.0 code base" -> "Tizen 2.0 code base" -> "Tizen 3.0 code base";
 "Tizen 1.0 code base" -> "TizenMobile 1.0 Larkspur";
 "Tizen 2.0 code base" -> "TizenMobile 2.0 Magnolia";

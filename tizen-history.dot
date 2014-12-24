@@ -65,6 +65,7 @@ graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-2
 { rank = same; 2007; "OS2007"; "Moblin" }
 { rank = same; 2008; "OS2008"; "LiMo"; "SLP 2008" }
 { rank = same; 2009; "Maemo5"; "Moblin2"; "Ubuntu 9.04"/*; "Mer"*/ }
+{ rank = same; "Harmattan"; "Mer" }
 { rank = same; 2010; "MeeGo"; "Mer 0.17"; "Bada 1.0" }
 { rank = same; 2011; "Ubuntu 11.04"; "LiMo4"; "SLP 2011"; "Nemo Mobile"; "MeeGo 1.2" }
 { rank = same; "2011-09"; "Ubuntu IVI Remix Beta1 for 11.04" }
@@ -99,7 +100,7 @@ graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-2
 "Ubuntu 9.04" -> "Mer" -> "Mer 0.17" -> "Mer Core" -> "Mer Core 2013-01" -> "Mer Core 2014-09";
 "Maemo5" -> "Mer"; /* actually it tries to be a functional clone on the top - thus it copies the design - but it has it's own code base */
 "MeeGo" -> "MeeGo 1.1" -> "MeeGo 1.2" -> "TizenIVI Preview 2012-07";
-"Maemo5" -> "MeeGo 1.2 Harmattan";
+"Maemo5" -> "Harmattan" -> "MeeGo 1.2 Harmattan";
 "MeeGo 1.2" -> "Mer Core";
 "MeeGo 1.2" -> "Nemo Mobile" -> "Sailfish OS" -> "Sailfish OS 1.1.1.27" -> "Sailfish OS 2.0";
 "Mer Core" -> "Sailfish OS";

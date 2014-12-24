@@ -16,6 +16,7 @@ READER   = $(READER2)
 all:: $(OUTFILE)
 
 $(OUTFILE): $(DOTFILE)
+	rm -f $(OUTFILE)
 	$(DOT) $(FLAGS) $(DOTFILE) -o $(OUTFILE)
 
 clean:

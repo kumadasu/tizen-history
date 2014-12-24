@@ -1,15 +1,15 @@
 digraph tizenhistory
 {
 
-graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-24 --- dates ahead are predictions" ]
+graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-25 --- dates ahead are predictions" ]
 
 /* Timeline */
 {
 	node [shape=plaintext, fontsize=16];
 
 	past -> /*1990 ->*/
-	1991 -> 1992 -> 1993 -> /*1994 ->*/ 1995 ->
-	/*1996 -> 1997 -> 1998 -> 1999 ->*/ 2000 ->
+	1991 -> 1992 -> 1993 -> 1994 -> 1995 ->
+	1996 -> /*1997 -> 1998 -> 1999 ->*/ 2000 ->
 	/*2001 ->*/ 2002 -> 2003 -> 2004 -> 2005 ->
 	2006 -> 2007 -> 2008 -> 2009 -> 2010 ->
 	2011 -> "2011-04" -> "2011-07" -> "2011-09" -> "2011-10" ->
@@ -31,9 +31,13 @@ graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-2
 	{ rank = same; "past"; "Toyota" }
 	{ rank = same; "past"/*1983*/; "GNU project" }
 	{ rank = same; "past"; "MINIX community" }
+	{ rank = same; "past"; /*"1979";*/ "Novell" }
+	{ rank = same; "1992"; "SUSE Linux GmbH" }
 	{ rank = same; "1993"; "Red Hat" }
 	{ rank = same; "2000"; "Open Source Development Labs" }
 	{ rank = same; "2000"; "Free Standards Group" }
+	{ rank = same; "2003"; "SUSE (brand)" }
+	{ rank = same; "2005"; "openSUSE" }
 	{ rank = same; "2007"; "Linux Foundation" }
 	{ rank = same; "2007"; "LiMo Foundation" }
 	{ rank = same; "2009"; "GENIVI Alliance" }
@@ -43,6 +47,8 @@ graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-2
 	{ rank = same; "2011-09"; "Tizen Project" }
 	{ rank = same; "2012"; "Tizen Association" }
 	{ rank = same; "Tizen for IVI team" }
+
+    "openSUSE Goblin Team"
 }
 
 /* Technologies */
@@ -54,19 +60,21 @@ graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-2
 /* OS & Software Components */
 { rank = same; "GNU tools"; "GNU GPL" }
 { rank = same; 1991; "Linux Kernel" }
-{ rank = same; 1992; "Linux OS" }
-{ rank = same; 1993; "Debian" }
-{ rank = same; 1995; "Red Hat Linux" }
+{ rank = same; 1992; "Linux OS", "SLS" }
+{ rank = same; 1993; "Debian", "Slackware" }
+{ rank = same; 1994; "jurix"; "Red Hat Linux 1" }
+/* { rank = same; 1995;  } */
+{ rank = same; 1996; "SuSE Linux 4.2" }
 { rank = same; 2002; "Samsung Linux Platform" }
-{ rank = same; 2003; "Fedora" }
+{ rank = same; 2003; "Fedora 1" }
 { rank = same; 2004; "Ubuntu 4.10" }
-{ rank = same; 2005; "OS2005" }
-{ rank = same; 2006; "OS2006" }
+{ rank = same; 2005; "OS2005"; "SUSE Linux 10.0" }
+{ rank = same; 2006; "OS2006"; "openSUSE 10.2" }
 { rank = same; 2007; "OS2007"; "Moblin" }
-{ rank = same; 2008; "OS2008"; "LiMo"; "SLP 2008" }
-{ rank = same; 2009; "Maemo5"; "Moblin2"; "Ubuntu 9.04"/*; "Mer"*/ }
-{ rank = same; "Harmattan"; "Mer" }
-{ rank = same; 2010; "MeeGo"; "Mer 0.17"; "Bada 1.0" }
+{ rank = same; 2008; "OS2008"; "LiMo"; "SLP 2008"; "Fedora 9" }
+{ rank = same; 2009; "Maemo5"; "Moblin2"; "openSUSE 11.2"; "Ubuntu 9.04"/*; "Mer"*/ }
+{ rank = same; /*"2009";*/ "Harmattan"; "Mer"; "openSUSE Moblin 2.0 Beta"; "Moblin2.1" }
+{ rank = same; 2010; "MeeGo"/*" aka Moblin2.2"*/; "Mer 0.17"; "Bada 1.0" }
 { rank = same; 2011; "Ubuntu 11.04"; "LiMo4"; "SLP 2011"; "Nemo Mobile"; "MeeGo 1.2" }
 { rank = same; "2011-09"; "Ubuntu IVI Remix Beta1 for 11.04" }
 { rank = same; "2011-10"; "Ubuntu 11.10" }
@@ -80,7 +88,7 @@ graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-2
 { rank = same; "2013-11"; "TizenMobile 2.2.1" }
 { rank = same; 2014; "Ubuntu 14.04"; "Nemo Mobile 2014-02" }
 { rank = same; "2014-07"; "TizenIVI 3.0-M3 2014-07" }
-{ rank = same; "2014-Q4"; "TizenMobile 2.3"; "Mer Core 2014-09"; "Sailfish OS 1.1.1.27"; "Ubuntu 14.10" }
+{ rank = same; "2014-Q4"; "TizenMobile 2.3"; "Mer Core 2014-09"; "Sailfish OS 1.1.1.27"; "Ubuntu 14.10"; "openSUSE 13.2"; "Fedora 21" }
 { rank = same; "2015"; "TizenMobile 3.0"; "Sailfish OS 2.0" }
 
 /* OS to OS */
@@ -90,15 +98,21 @@ graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-2
 "GNU GPL" -> "Linux OS"
 "Linux OS" -> "Samsung Linux Platform";
 "Linux OS" -> "Debian"
-"Linux OS" -> "Red Hat Linux"
+"Linux OS" -> "Red Hat Linux 1"
 "Linux OS" -> "LiMo"
-"Red Hat Linux" -> "Fedora";
+"Linux OS" -> "SLS" -> "Slackware" -> "jurix" -> "SuSE Linux 4.2" -> "SUSE Linux 10.0" -> "openSUSE 10.2" -> "openSUSE 11.2" -> "openSUSE 13.2"
+"openSUSE 11.2" -> "openSUSE Moblin 2.0 Beta";
+"openSUSE 11.2" -> "MeeGo";
+"Red Hat Linux 1" -> "Fedora 1" -> "Fedora 9" -> "Fedora 21";
 "Debian" -> "Ubuntu 4.10";
 "Debian" -> "OS2005" -> "OS2006" -> "OS2007" -> "OS2008" -> "Maemo5" -> "MeeGo";
-"Ubuntu 4.10" -> "Moblin" -> "Moblin2";
-"Fedora" -> "Moblin2" -> "MeeGo";
+"Ubuntu 4.10" -> "Moblin" -> "Moblin2" -> "Moblin2.1";
+"Moblin2" -> "openSUSE Moblin 2.0 Beta";
+"Fedora 9" -> "Moblin2";
+"Moblin2.1" -> "MeeGo";
 "Ubuntu 9.04" -> "Mer" -> "Mer 0.17" -> "Mer Core" -> "Mer Core 2013-01" -> "Mer Core 2014-09";
 "Maemo5" -> "Mer"; /* actually it tries to be a functional clone on the top - thus it copies the design - but it has it's own code base */
+"MeeGo" -> "openSUSE Smeegol 1.0"
 "MeeGo" -> "MeeGo 1.1" -> "MeeGo 1.2" -> "TizenIVI Preview 2012-07";
 "Maemo5" -> "Harmattan" -> "MeeGo 1.2 Harmattan";
 "MeeGo 1.2" -> "Mer Core";
@@ -134,19 +148,28 @@ graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-2
 "Ubuntu 12.10" -> "Ubuntu Touch";
 
 /* Organisation to OS */
-"GNU project" -> "GNU tools"
-"GNU project" -> "GNU GPL"
-"MINIX community" -> "Linux OS"
-"Red Hat" -> "Fedora";
-"Red Hat" -> "Red Hat Linux";
+"GNU project" -> "GNU tools";
+"GNU project" -> "GNU GPL";
+"MINIX community" -> "Linux OS";
+
+"SUSE Linux GmbH" -> "SuSE Linux 4.2";
+"openSUSE" -> "SUSE Linux 10.0";
+
+"Red Hat" -> "Red Hat Linux 1";
+
 "Canonical" -> "Ubuntu 4.10";
+
 "Nokia" -> "OS2005";
 "Intel" -> "Moblin";
 "Intel" -> "MeeGo";
+"Novell" -> "MeeGo";
+"Aminocom" -> "MeeGo";
+"openSUSE Goblin Team" -> "openSUSE Moblin 2.0 Beta" -> "openSUSE Smeegol 1.0";
 "Nokia" -> "Mer";
 "Nokia" -> "MeeGo";
 "Samsung" -> "Bada 1.0";
 "Samsung" -> "Samsung Linux Platform";
+"Linux Foundation" -> "Moblin2"
 "Intel" -> "TizenIVI Preview";
 "Tizen for IVI team" -> "TizenIVI Preview";
 "GENIVI Alliance" -> "MeeGo";
@@ -168,6 +191,9 @@ graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-2
 "Linux Foundation" -> "Linux Foundation (2011-07)" -> "Tizen Project" -> "Tizen Association";
 "LiMo Foundation" -> "Tizen Project";
 "LiMo Foundation" -> "Tizen Association";
+
+"SUSE Linux GmbH" -> "SUSE (brand)" -> "openSUSE" -> "openSUSE Goblin Team"
+"Novell" -> "SUSE (brand)"
 
 "Intel" -> "GENIVI Alliance";
 "Several Car Manufacturers" -> "GENIVI Alliance";

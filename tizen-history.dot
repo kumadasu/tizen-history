@@ -1,7 +1,7 @@
 digraph tizenhistory
 {
 
-graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-21 --- dates ahead are predictions" ]
+graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-24 --- dates ahead are predictions" ]
 
 /* Timeline */
 {
@@ -80,7 +80,7 @@ graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-2
 { rank = same; 2014; "Ubuntu 14.04"; "Nemo Mobile 2014-02" }
 { rank = same; "2014-07"; "TizenIVI 3.0-M3 2014-07" }
 { rank = same; "2014-Q4"; "TizenMobile 2.3"; "Mer Core 2014-09"; "Sailfish OS 1.1.1.27"; "Ubuntu 14.10" }
-{ rank = same; "2015"; "TizenMobile 3.0" }
+{ rank = same; "2015"; "TizenMobile 3.0"; "Sailfish OS 2.0" }
 
 /* OS to OS */
 "GNU tools" -> "Linux Kernel"
@@ -101,7 +101,7 @@ graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-2
 "MeeGo" -> "MeeGo 1.1" -> "MeeGo 1.2" -> "TizenIVI Preview 2012-07";
 "Maemo5" -> "MeeGo 1.2 Harmattan";
 "MeeGo 1.2" -> "Mer Core";
-"MeeGo 1.2" -> "Nemo Mobile" -> "Sailfish OS" -> "Sailfish OS 1.1.1.27";
+"MeeGo 1.2" -> "Nemo Mobile" -> "Sailfish OS" -> "Sailfish OS 1.1.1.27" -> "Sailfish OS 2.0";
 "Mer Core" -> "Sailfish OS";
 "MeeGo 1.2" -> "MeeGo 1.2 Harmattan";
 "Nemo Mobile" -> "Nemo Mobile 2012-07" -> "Nemo Mobile 2014-02"

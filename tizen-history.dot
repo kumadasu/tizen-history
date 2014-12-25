@@ -103,9 +103,10 @@ graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-2
 "Linux OS" -> "SLS" -> "Slackware" -> "jurix" -> "SuSE Linux 4.2" -> "SUSE Linux 10.0" -> "openSUSE 10.2" -> "openSUSE 11.2" -> "openSUSE 13.2"
 "openSUSE 11.2" -> "openSUSE Moblin 2.0 Beta";
 "openSUSE 11.2" -> "MeeGo";
-"Red Hat Linux 1" -> "Fedora 1" -> "Fedora 9" -> "Fedora 21";
+"Red Hat Linux 1" -> "Fedora 1" -> "Fedora 9" -> "Fedora 14" -> "Fedora 21";
 "Debian" -> "Ubuntu 4.10";
 "Debian" -> "OS2005" -> "OS2006" -> "OS2007" -> "OS2008" -> "Maemo5" -> "MeeGo";
+"MeeGo" -> "Fedora 14";
 "Ubuntu 4.10" -> "Moblin" -> "Moblin2" -> "Moblin2.1";
 "Moblin2" -> "openSUSE Moblin 2.0 Beta";
 "Fedora 9" -> "Moblin2";

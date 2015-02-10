@@ -1,36 +1,54 @@
-digraph tizenhistory {
-graph [label="Tizen History (In Construction March, 2013)"]
-/*timeline*/
+digraph tizenhistory
+{
+
+graph [ label = "Tizen History --- Under Construction --- Last Update: 2014-12-25 --- dates ahead are predictions" ]
+
+/* Timeline */
 {
 	node [shape=plaintext, fontsize=16];
-	"past" -> /*1990 ->
+
+	past -> /*1990 ->*/
 	1991 -> 1992 -> 1993 -> 1994 -> 1995 ->
-	1996 -> 1997 -> 1998 -> 1999 -> 2000 ->
-	2001 -> 2002 -> 2003 -> 2004 ->*/ 2005 ->
+	1996 -> /*1997 -> 1998 -> 1999 ->*/ 2000 ->
+	/*2001 ->*/ 2002 -> 2003 -> 2004 -> 2005 ->
 	2006 -> 2007 -> 2008 -> 2009 -> 2010 ->
-	2011 -> 2012 -> 2013;
+	2011 -> "2011-04" -> "2011-07" -> "2011-09" -> "2011-10" ->
+	"2011-12" -> 2012 -> "2012-04" -> "2012-07" -> 2013 -> "2013-11" ->
+	2014 -> "2014-07" -> "2014-Q4" ->
+	"2015";
 }
 
-/* Organizations */
+/* Organizations & Project work groups */
 {
 	node [shape=box];
-	{ rank = same; "past"; "Nokia"}
-	{ rank = same; "past"; "Intel"}
-	{ rank = same; "past"; "Samsung"}
-	{ rank = same; "past"; "ARM and several manufacturers"}
-	{ rank = same; "past"; "Several Car Manufacturers"}
-	{ rank = same; "past"; "Canonical"}
-	{ rank = same; "past"; "Linux Foundation"}
-	{ rank = same; "past"; "Toyota"}
-	{ rank = same; "2007"; "LiMo Foundation"}
-	{ rank = same; "2009"; "GENIVI Alliance"}
-	{ rank = same; "2011"; "Tizen Association"} //?
-	{ rank = same; "2012"; "Jolla"} //?
-"Toyota" -> "Linux Foundation";
-"Intel" -> "GENIVI Alliance";
-"Several Car Manufacturers" -> "GENIVI Alliance";
-"ARM and several manufacturers" -> "GENIVI Alliance";
-"Canonical" -> "GENIVI Alliance";
+	{ rank = same; "past"; "Nokia" }
+	{ rank = same; "past"; "Intel" }
+	{ rank = same; "past"; "Samsung" }
+	{ rank = same; "past"; "Samsung Electronics" }
+	{ rank = same; "past"; "ARM and several manufacturers" }
+	{ rank = same; "past"; "Several Car Manufacturers" }
+	{ rank = same; "past"; "Canonical" }
+	{ rank = same; "past"; "Toyota" }
+	{ rank = same; "past"/*1983*/; "GNU project" }
+	{ rank = same; "past"; "MINIX community" }
+	{ rank = same; "past"; /*"1979";*/ "Novell" }
+	{ rank = same; "1992"; "SUSE Linux GmbH" }
+	{ rank = same; "1993"; "Red Hat" }
+	{ rank = same; "2000"; "Open Source Development Labs" }
+	{ rank = same; "2000"; "Free Standards Group" }
+	{ rank = same; "2003"; "SUSE (brand)" }
+	{ rank = same; "2005"; "openSUSE" }
+	{ rank = same; "2007"; "Linux Foundation" }
+	{ rank = same; "2007"; "LiMo Foundation" }
+	{ rank = same; "2009"; "GENIVI Alliance" }
+	{ rank = same; "2011"; "Jolla" }
+	{ rank = same; "2011-04"; "GENIVI Alliance (2011-04)" }
+	{ rank = same; "2011-07"; "Linux Foundation (2011-07)" }
+	{ rank = same; "2011-09"; "Tizen Project" }
+	{ rank = same; "2012"; "Tizen Association" }
+	{ rank = same; "Tizen for IVI team" }
+
+    "openSUSE Goblin Team"
 }
 
 /* Technologies */
@@ -39,57 +57,153 @@ graph [label="Tizen History (In Construction March, 2013)"]
 //	"HTML5";
 }
 
-/* OS */
-{ rank = same; "past"; "Ubuntu"; "Fedora"; "Debian"}
-{ rank = same; 2005; "OS2005"}
-{ rank = same; 2006; "OS2006"}
-{ rank = same; 2007; "OS2007"; "Moblin"}
-{ rank = same; 2008; "OS2008"; "LiMo"}
-{ rank = same; 2009; "Maemo5"; "Moblin2"; "Ubuntu 9.04"; "Mer"}
-{ rank = same; 2010; "MeeGo"; "Mer 0.17"; "SLP"}
-{ rank = same; 2011; "Ubuntu 11.04"; "LiMo4"; "Nemo"}
-{ rank = same; "Ubuntu 11.10"; "Ubuntu IVI Remix 1.0"}
-{ rank = same; 2012; "TizenMobile 1.0 Larkspur"; "TizenIVI Preview"};
-{ rank = same; 2013; "TizenMobile 2.0 Magnolia"; "Sailfish OS"; "Ubuntu Touch"}
-	"Debian" -> "Ubuntu";
-	"Debian" -> "OS2005" -> "OS2006" -> "OS2007" -> "OS2008" -> "Maemo5" -> "MeeGo";
-	"Ubuntu" -> "Moblin" -> "Moblin2";
-	"Fedora" -> "Moblin2" -> "MeeGo";
-	"Ubuntu 9.04" -> "Mer" -> "Mer 0.17" -> "Mer Core";
-	"LiMo" -> "LiMo4";
-	"MeeGo" -> "MeeGo 1.1" -> "MeeGo 1.2" -> "TizenIVI Preview";
-	"Maemo5" -> "MeeGo 1.2 Harmattan";
-	"MeeGo 1.2" -> "Mer Core";
-	"MeeGo 1.2" -> "Nemo" -> "Sailfish OS";
-	"Mer Core" -> "Sailfish OS";
-	"MeeGo 1.2" -> "MeeGo 1.2 Harmattan";
-	"SLP" -> "TizenMobile 1.0 Larkspur";
-	"Bada" -> "TizenMobile 2.0 Magnolia";
-	"TizenMobile 1.0 Larkspur" -> "TizenMobile 2.0 Magnolia";
-	"Ubuntu" -> "Ubuntu 9.04" -> "Ubuntu 11.04" -> "Ubuntu 11.10" -> "Ubuntu IVI Remix 1.0";
-	"Ubuntu 11.04" -> "Ubuntu IVI Remix pre-release" -> "Ubuntu IVI Remix 1.0";
-	"Ubuntu 11.10" -> "Ubuntu 12.10" -> "Ubuntu Touch";
+/* OS & Software Components */
+{ rank = same; "GNU tools"; "GNU GPL" }
+{ rank = same; 1991; "Linux Kernel" }
+{ rank = same; 1992; "Linux OS", "SLS" }
+{ rank = same; 1993; "Debian", "Slackware" }
+{ rank = same; 1994; "jurix"; "Red Hat Linux 1" }
+/* { rank = same; 1995;  } */
+{ rank = same; 1996; "SuSE Linux 4.2" }
+{ rank = same; 2002; "Samsung Linux Platform" }
+{ rank = same; 2003; "Fedora 1" }
+{ rank = same; 2004; "Ubuntu 4.10" }
+{ rank = same; 2005; "OS2005"; "SUSE Linux 10.0" }
+{ rank = same; 2006; "OS2006"; "openSUSE 10.2" }
+{ rank = same; 2007; "OS2007"; "Moblin" }
+{ rank = same; 2008; "OS2008"; "LiMo"; "SLP 2008"; "Fedora 9" }
+{ rank = same; 2009; "Maemo5"; "Moblin2"; "openSUSE 11.2"; "Ubuntu 9.04"/*; "Mer"*/ }
+{ rank = same; /*"2009";*/ "Harmattan"; "Mer"; "openSUSE Moblin 2.0 Beta"; "Moblin2.1" }
+{ rank = same; 2010; "MeeGo"/*" aka Moblin2.2"*/; "Mer 0.17"; "Bada 1.0" }
+{ rank = same; 2011; "Ubuntu 11.04"; "LiMo4"; "SLP 2011"; "Nemo Mobile"; "MeeGo 1.2" }
+{ rank = same; "2011-09"; "Ubuntu IVI Remix Beta1 for 11.04" }
+{ rank = same; "2011-10"; "Ubuntu 11.10" }
+{ rank = same; "2011-12"; "Ubuntu IVI Remix Beta2 for 11.04" }
+{ rank = same; "2012-04"; "Ubuntu 12.04"; "TizenMobile 1.0 Larkspur"; }
+{ rank = same; "2012-07"; "TizenIVI Preview 2012-07"; "Nemo Mobile 2012-07" };
+{ rank = same; 2013; "Ubuntu 13.04"; "Sailfish OS"; "Ubuntu Touch"; "Bada 2.0.6" }
+{ rank = same; "TizenMobile 2.0 Magnolia" }
+{ rank = same; /*"2013-04";*/ "TizenMobile 2.1 Nectarine" }
+{ rank = same; /*"2013-07";*/ "TizenMobile 2.2" }
+{ rank = same; "2013-11"; "TizenMobile 2.2.1" }
+{ rank = same; 2014; "Ubuntu 14.04"; "Nemo Mobile 2014-02" }
+{ rank = same; "2014-07"; "TizenIVI 3.0-M3 2014-07" }
+{ rank = same; "2014-Q4"; "TizenMobile 2.3"; "Mer Core 2014-09"; "Sailfish OS 1.1.1.27"; "Ubuntu 14.10"; "openSUSE 13.2"; "Fedora 21" }
+{ rank = same; "2015"; "TizenMobile 3.0"; "Sailfish OS 2.0" }
 
-"Canonical" -> "Ubuntu";
+/* OS to OS */
+"GNU tools" -> "Linux Kernel"
+"GNU tools" -> "Linux OS"
+"Linux Kernel" -> "Linux OS"
+"GNU GPL" -> "Linux OS"
+"Linux OS" -> "Samsung Linux Platform";
+"Linux OS" -> "Debian"
+"Linux OS" -> "Red Hat Linux 1"
+"Linux OS" -> "LiMo"
+"Linux OS" -> "SLS" -> "Slackware" -> "jurix" -> "SuSE Linux 4.2" -> "SUSE Linux 10.0" -> "openSUSE 10.2" -> "openSUSE 11.2" -> "openSUSE 13.2"
+"openSUSE 11.2" -> "openSUSE Moblin 2.0 Beta";
+"openSUSE 11.2" -> "MeeGo";
+"Red Hat Linux 1" -> "Fedora 1" -> "Fedora 9" -> "Fedora 14" -> "Fedora 21";
+"Debian" -> "Ubuntu 4.10";
+"Debian" -> "OS2005" -> "OS2006" -> "OS2007" -> "OS2008" -> "Maemo5" -> "MeeGo";
+"MeeGo" -> "Fedora 14";
+"Ubuntu 4.10" -> "Moblin" -> "Moblin2" -> "Moblin2.1";
+"Moblin2" -> "openSUSE Moblin 2.0 Beta";
+"Fedora 9" -> "Moblin2";
+"Moblin2.1" -> "MeeGo";
+"Ubuntu 9.04" -> "Mer" -> "Mer 0.17" -> "Mer Core" -> "Mer Core 2013-01" -> "Mer Core 2014-09";
+"Maemo5" -> "Mer"; /* actually it tries to be a functional clone on the top - thus it copies the design - but it has it's own code base */
+"MeeGo" -> "openSUSE Smeegol 1.0"
+"MeeGo" -> "MeeGo 1.1" -> "MeeGo 1.2" -> "TizenIVI Preview 2012-07";
+"Maemo5" -> "Harmattan" -> "MeeGo 1.2 Harmattan";
+"MeeGo 1.2" -> "Mer Core";
+"MeeGo 1.2" -> "Nemo Mobile" -> "Sailfish OS" -> "Sailfish OS 1.1.1.27" -> "Sailfish OS 2.0";
+"Mer Core" -> "Sailfish OS";
+"MeeGo 1.2" -> "MeeGo 1.2 Harmattan";
+"Nemo Mobile" -> "Nemo Mobile 2012-07" -> "Nemo Mobile 2014-02"
+
+"FreeBSD" -> "Bada 1.0"
+"NetBSD" -> "Bada 1.0";
+"OpenBSD" -> "Bada 1.0";
+"Bada 1.0" -> "Bada 2.0.6" -> "TizenMobile 2.0 Magnolia";
+
+"Samsung Linux Platform" -> "SLP 2008" -> "SLP 2011" -> "Tizen code base";
+"SLP 2008" -> "LiMo";
+"SLP 2011" -> "LiMo4";
+"LiMo4" -> "SLP 2011";
+"LiMo" -> "LiMo4" -> "Tizen code base" -> "Tizen 1.0 code base" -> "Tizen 2.0 code base" -> "Tizen 3.0 code base";
+"Tizen 1.0 code base" -> "TizenMobile 1.0 Larkspur";
+"Tizen 2.0 code base" -> "TizenMobile 2.0 Magnolia";
+"Tizen 3.0 code base" -> "TizenMobile 3.0";
+"TizenMobile 1.0 Larkspur" -> "TizenMobile 2.0 Magnolia" -> "TizenMobile 2.1 Nectarine" -> "TizenMobile 2.2" -> "TizenMobile 2.2.1" -> "TizenMobile 2.3" -> "TizenMobile 3.0";
+"Tizen code base" -> "TizenIVI Preview";
+"Tizen 1.0 code base" -> "TizenIVI Preview 2012-07";
+"Tizen 2.0 code base" -> "TizenIVI Preview 2012-09";
+"Tizen 3.0 code base" -> "TizenIVI 3.0-M1 2013-07";
+"TizenIVI Preview" -> "TizenIVI Preview 2012-07" -> "TizenIVI Preview 2012-09" -> "TizenIVI 2.0 2013-04" -> "TizenIVI 3.0-M1 2013-07" -> "TizenIVI 3.0-M3 2014-07";
+"Ubuntu 4.10" -> "Ubuntu 9.04" -> "Ubuntu 11.04" -> "Ubuntu 11.10" -> "Ubuntu 12.04" -> "Ubuntu 12.10" -> "Ubuntu 13.04" -> "Ubuntu 13.10" -> "Ubuntu 14.04" -> "Ubuntu 14.10";
+"Ubuntu 11.04" -> "Ubuntu IVI Remix Beta1 for 11.04";
+"Ubuntu 11.04" -> "Ubuntu IVI Remix Beta2 for 11.04";
+"Ubuntu 11.10" -> "Ubuntu IVI Remix pre-release";
+"Ubuntu IVI Remix Beta1 for 11.04" -> "Ubuntu IVI Remix Beta2 for 11.04" -> "Ubuntu IVI Remix pre-release" -> "Ubuntu IVI Remix 1.0";
+"Ubuntu 12.10" -> "Ubuntu Touch";
+
+/* Organisation to OS */
+"GNU project" -> "GNU tools";
+"GNU project" -> "GNU GPL";
+"MINIX community" -> "Linux OS";
+
+"SUSE Linux GmbH" -> "SuSE Linux 4.2";
+"openSUSE" -> "SUSE Linux 10.0";
+
+"Red Hat" -> "Red Hat Linux 1";
+
+"Canonical" -> "Ubuntu 4.10";
+
 "Nokia" -> "OS2005";
 "Intel" -> "Moblin";
 "Intel" -> "MeeGo";
+"Novell" -> "MeeGo";
+"Aminocom" -> "MeeGo";
+"openSUSE Goblin Team" -> "openSUSE Moblin 2.0 Beta" -> "openSUSE Smeegol 1.0";
 "Nokia" -> "Mer";
 "Nokia" -> "MeeGo";
-"Samsung" -> "Bada";
-"Samsung" -> "SLP";
+"Samsung" -> "Bada 1.0";
+"Samsung" -> "Samsung Linux Platform";
+"Linux Foundation" -> "Moblin2"
 "Intel" -> "TizenIVI Preview";
-"Samsung" -> "TizenMobile 1.0 Larkspur";
+"Tizen for IVI team" -> "TizenIVI Preview";
 "GENIVI Alliance" -> "MeeGo";
-"GENIVI Alliance" -> "TizenIVI Preview";
-"GENIVI Alliance" -> "Ubuntu IVI Remix pre-release";
+"GENIVI Alliance (2011-04)" -> "TizenIVI Preview";
+"GENIVI Alliance (2011-04)" -> "Ubuntu IVI Remix Beta1 for 11.04";
 "LiMo Foundation" -> "LiMo";
-"LiMo Foundation" -> "TizenIVI Preview";
-"LiMo Foundation" -> "TizenMobile 1.0 Larkspur";
-"Tizen Association" -> "TizenIVI Preview";
-"Tizen Association" -> "TizenMobile 1.0 Larkspur";
-"Linux Foundation" -> "TizenIVI Preview";
-"Linux Foundation" -> "TizenMobile 1.0 Larkspur";
-"Jolla" -> "Sailfish OS"
-}
+"Tizen Project" -> "Tizen code base";
+"Tizen Association" -> "Tizen code base";
+"Jolla" -> "Sailfish OS";
 
+/* Organisations to Organisations */
+"Open Source Development Labs" -> "Linux Foundation";
+"Free Standards Group" -> "Linux Foundation";
+"Intel" -> "Linux Foundation";
+"Samsung" ->  "Linux Foundation";
+"Samsung" ->  "Samsung Electronics";
+"Samsung Electronics" -> "LiMo Foundation";
+"Toyota" -> "Linux Foundation (2011-07)";
+"Linux Foundation" -> "Linux Foundation (2011-07)" -> "Tizen Project" -> "Tizen Association";
+"LiMo Foundation" -> "Tizen Project";
+"LiMo Foundation" -> "Tizen Association";
+
+"SUSE Linux GmbH" -> "SUSE (brand)" -> "openSUSE" -> "openSUSE Goblin Team"
+"Novell" -> "SUSE (brand)"
+
+"Intel" -> "GENIVI Alliance";
+"Several Car Manufacturers" -> "GENIVI Alliance";
+"ARM and several manufacturers" -> "GENIVI Alliance";
+"GENIVI Alliance" -> "GENIVI Alliance (2011-04)";
+"Canonical" -> "GENIVI Alliance (2011-04)";
+
+"Tizen Association" -> "Tizen for IVI team";
+"Intel" -> "Tizen for IVI team";
+"Toyota" -> "Tizen for IVI team";
+
+}
